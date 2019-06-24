@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    la etiqueta de arriba la copiamos directo de la página de bootstrap en documentacion+introduccion+starte template y siwempre va abajo del UTF8-->
+    <title>Gnetfire</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+<!--    lo anterior SIMPRE va en ese orden, NUNCA poner primero nuestros estilos, porque tenemos que sobreeescribir sobre bootstrap, asì como va primero lo de los iconos para que bootstrap los jale de ahí-->
+</head>
+<body>
+
+<!--  .container>.row>.col-4>img-->
+  <div class="container">
+      <div class="row justify-content-center"> <!-- a este se le da centrar para que afecte a los hijos -->
+        <div class="col-6 col-md-4 mt-3"> <!-- este es para que haga el cambio de columnas en los diferentes dispositivos -->
+          <img src="img/png/logo-header.png" class="img-fluid" alt="logo"></div> <!-- la clase img-fluid es para que la haga responsiva -->
+      </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+ <div class="container"><!-- este es el que se creo para poder centrar los elementos del nav sin afectar al principal contenedor que es el que queremos que abarque todo el monitor. Y se hizo seleccionando todo lo que va dentro del nav, luego aprietas shift+cmd+a y te despliega abajo para nombrar el nuevo contenedor y escribes .container     -->
+       <a class="navbar-brand" href="#"><img src="img/png/logo-menu.png"></a><!-- aqui pusimos la imagen del logo-->
+      <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--  el p-2 es para darle padding al icono y no quede pegado del lado derecho-->
+      <!--    <span class="navbar-toggler-icon"></span> este se quitó para poner el icono de puntitos, que es el de abajo-->
+       <i class="fas fa-ellipsis-v fa-lg"></i> <!-- fa-lg para el tamaño del icono-->
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+<!-- este es para poder mandar el menu del lado derecho / mx deja margen derecha e izquierda / mr los manda del lado izquierdo-->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">ACERCA DE<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SERVICIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LINEA DE NEGOCIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ALIADOS DE NEGOCIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACTO</a>
+          </li>
+<!--
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+-->
+<!--
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+          ESTO SE QUITO PORQUE NO SE VA AUTILIZAR
+-->
+        </ul>
+<!--
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+         ESTO SE QUITO PORQUE NO SE VA AUTILIZAR
+-->
+      </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script> <!-- es la libreria para los popp ups -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
